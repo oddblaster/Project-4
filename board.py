@@ -42,15 +42,14 @@ class Board:
         for row in range(9):
             pygame.draw.line(self.screen,"Black",(0,row*(self.height//9)),(self.width,row*(self.height//9)),10)
         for col in range(9):
-            pygame.draw.line(self.screen,"Black",(col*(self.width//9),0),(col*(self.width//9),self.height)),10)
+            pygame.draw.line(self.screen,"Black",(col*(self.width//9),0),(col*(self.width//9),self.height),10)
 
 
 
-    nt(cell.valrowue, end=" "
-        for  in self.cell:
+    def print_board(self):
+        for row in self.cell:
             for cell in row:
                 print(cell.value, end = " ")
-            print())
             print()
 
     # marks cell at (row, col) as the currently selected cell

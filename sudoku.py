@@ -96,7 +96,8 @@ if __name__ == "__main__":
                 hard_button.draw()
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    if event.pos[1] < 233 and event.pos[1] > 167:
+                    print(event.pos)
+                    if event.pos[1] < 233 and event.pos[1] > 166:
                         if event.pos[0] > 190 and event.pos[0] < 292:
                             in_game = True
                             screen.fill("White")
